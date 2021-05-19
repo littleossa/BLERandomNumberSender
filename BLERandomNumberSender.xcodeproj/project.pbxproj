@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		98D4B41826548E7E00296791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4B41726548E7E00296791 /* AppDelegate.swift */; };
 		98D4B41A26548E7E00296791 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4B41926548E7E00296791 /* SceneDelegate.swift */; };
-		98D4B41C26548E7E00296791 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4B41B26548E7E00296791 /* ViewController.swift */; };
+		98D4B41C26548E7E00296791 /* PeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4B41B26548E7E00296791 /* PeripheralViewController.swift */; };
 		98D4B41F26548E7E00296791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98D4B41D26548E7E00296791 /* Main.storyboard */; };
 		98D4B42126548E7F00296791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98D4B42026548E7F00296791 /* Assets.xcassets */; };
 		98D4B42426548E7F00296791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98D4B42226548E7F00296791 /* LaunchScreen.storyboard */; };
+		98D4B42C2654929000296791 /* DeviceBLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4B42B2654929000296791 /* DeviceBLEManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		98D4B41426548E7E00296791 /* BLERandomNumberSender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLERandomNumberSender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D4B41726548E7E00296791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98D4B41926548E7E00296791 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		98D4B41B26548E7E00296791 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98D4B41B26548E7E00296791 /* PeripheralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralViewController.swift; sourceTree = "<group>"; };
 		98D4B41E26548E7E00296791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98D4B42026548E7F00296791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98D4B42326548E7F00296791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98D4B42526548E7F00296791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D4B42B2654929000296791 /* DeviceBLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceBLEManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				98D4B41726548E7E00296791 /* AppDelegate.swift */,
 				98D4B41926548E7E00296791 /* SceneDelegate.swift */,
-				98D4B41B26548E7E00296791 /* ViewController.swift */,
+				98D4B41B26548E7E00296791 /* PeripheralViewController.swift */,
+				98D4B42B2654929000296791 /* DeviceBLEManager.swift */,
 				98D4B41D26548E7E00296791 /* Main.storyboard */,
 				98D4B42026548E7F00296791 /* Assets.xcassets */,
 				98D4B42226548E7F00296791 /* LaunchScreen.storyboard */,
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98D4B41C26548E7E00296791 /* ViewController.swift in Sources */,
+				98D4B41C26548E7E00296791 /* PeripheralViewController.swift in Sources */,
 				98D4B41826548E7E00296791 /* AppDelegate.swift in Sources */,
+				98D4B42C2654929000296791 /* DeviceBLEManager.swift in Sources */,
 				98D4B41A26548E7E00296791 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
